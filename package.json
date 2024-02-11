@@ -1,7 +1,8 @@
 {
-  "homepage": "https://klisabeth.github.io/profile/",
+
   "name": "profile",
   "version": "0.1.0",
+  "homepage": "https://klisabeth.github.io/profile/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
