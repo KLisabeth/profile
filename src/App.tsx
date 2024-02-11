@@ -1,24 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { FC } from 'react';
+import {StateProvider} from './store/index';
+import Dashboard from './views/Dashboard';
 
-function App() {
+const App: FC = () => {
+ 
   return (
+    <StateProvider>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App">
+        <header className="App-header">
+          <h1>Counter Example</h1>
+        </header>
+        <Dashboard />
+      </div>
     </div>
+    </StateProvider>
   );
 }
 
