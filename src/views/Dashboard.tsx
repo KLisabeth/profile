@@ -19,10 +19,18 @@ const Counter: React.FC = () => {
 
   return (
     <div>
-      <p>Count: {state.count}</p>
-      <button onClick={increment}>Increment</button>
-      <button onClick={decrement}>Decrement</button>
-      <button onClick={reset}>Reset</button>
+      <div className="App">
+        <div className="App">
+          <header className="App-header">
+            <p>Count: {state.count}</p>
+          </header>
+          <button onClick={increment}>Increment</button>
+          <button onClick={decrement}>Decrement</button>
+          <button onClick={reset}>Reset</button>
+        </div>
+      </div>
+
+
     </div>
   );
 };

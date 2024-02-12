@@ -5,7 +5,7 @@ const Projects: FC = () => {
     <div className="Projects">
       <header className="Projects-header">
         <p>
-          this is your projects
+          This is your projects
         </p>
       </header>
     </div>
