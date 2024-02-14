@@ -8,7 +8,8 @@ const App: FC = () => {
 
   const navItems = [
     { path: '/', label: 'Dashboard' },
-    { path: '/projects', label: 'Projects' }
+    { path: '/projects', label: 'Projects' },
+    { path: '/about-me', label: 'About me' }
   ];
 
   return (

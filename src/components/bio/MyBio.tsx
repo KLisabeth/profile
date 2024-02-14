@@ -1,13 +1,13 @@
 import React, { FC } from 'react'
 
 
-interface Bio {
-    name: string
-    email: string
-    profession: string
-}
+// interface Bio {
+//     name: string
+//     email: string
+//     profession: string
+// }
 
-const MyBio: FC<Bio> = () => {
+const MyBio: FC = () => {
     return (
         <div>MyBio</div>
     )
