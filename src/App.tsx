@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import { StateProvider } from './store/index';
 import { BrowserRouter } from 'react-router-dom';
 import Router from './router/Router'
-import Navbar from './components/navigation/Navbar';
+import Navigation from './components/navigation/Navigation';
 
 const App: FC = () => {
 
@@ -15,7 +15,7 @@ const App: FC = () => {
   return (
     <StateProvider>
       <BrowserRouter >
-        <Navbar items={navItems} />
+        <Navigation items={navItems} />
 
         <div id="content"></div>
 

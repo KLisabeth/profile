@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Navbar from 'react-bootstrap/Navbar';
 
 interface NavItem {
   path: string;
@@ -10,9 +11,9 @@ interface NavbarProps {
   items: NavItem[];
 }
 
-const Navbar: React.FC<NavbarProps> = ({ items }) => {
+const Navigation: React.FC<NavbarProps> = ({ items }) => {
   return (
-    <nav>
+    <Navbar expand="lg" >
       <ul>
         {items.map((item, index) => (
           <li key={index}>
@@ -20,8 +21,8 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
           </li>
         ))}
       </ul>
-    </nav>
+    </Navbar>
   );
 };
 
-export default Navbar;
+export default Navigation;
