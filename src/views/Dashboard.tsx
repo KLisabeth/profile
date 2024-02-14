@@ -1,6 +1,7 @@
 // Counter.tsx
 import React from 'react';
 import { useStateValue } from '../store';
+//import background from "../assets/img/service.png"
 
 const Counter: React.FC = () => {
   const { state, dispatch } = useStateValue();
@@ -18,20 +19,21 @@ const Counter: React.FC = () => {
   };
 
   return (
-    <div>
-      <div className="App">
-        <div className="App">
-          <header className="App-header">
-            <p>Count: {state.count}</p>
-          </header>
-          <button onClick={increment}>Increment</button>
-          <button onClick={decrement}>Decrement</button>
-          <button onClick={reset}>Reset</button>
-        </div>
-      </div>
+    <div className='container'>
+
+      <div className="background-image" />
 
 
+      <header>
+        <p>Count: {state.count}</p>
+      </header>
+      <button onClick={increment}>Increment</button>
+      <button onClick={decrement}>Decrement</button>
+      <button onClick={reset}>Reset</button>
     </div>
+
+
+
   );
 };
 

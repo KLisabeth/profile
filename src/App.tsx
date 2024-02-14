@@ -16,6 +16,9 @@ const App: FC = () => {
     <StateProvider>
       <BrowserRouter >
         <Navbar items={navItems} />
+
+        <div id="content"></div>
+
         <Router />
       </BrowserRouter>
     </StateProvider>
